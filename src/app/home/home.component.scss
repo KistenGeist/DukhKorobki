@@ -1,0 +1,46 @@
+// variables
+$primaryColor: #cea64d;
+$accentColor: #fcce6c;
+
+.results {
+    display: grid;
+    column-gap: 14px;
+    row-gap: 14px;
+    grid-template-columns: repeat(auto-fill, minmax(400px,400px));
+    margin-top: 50px;
+    justify-content: space-around;
+}
+
+input[type="text"] {
+    border: solid 1px $primaryColor;
+    padding: 10px;
+    border-radius: 8px;
+    margin-right: 4px;
+    display: inline;
+    width: 30%;
+}
+
+button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: solid 1px $primaryColor;
+    background-color: $primaryColor;
+    color: white;
+    border-radius: 8px;
+}
+
+@media (min-width: 500px) and (max-width: 768px) {
+    .result {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    input[type="text"]{
+        width: 70%;
+    }
+}
+
+@media (max-width: 499px) {
+    .result {
+        grid-template-columns: 1fr;
+    }
+}

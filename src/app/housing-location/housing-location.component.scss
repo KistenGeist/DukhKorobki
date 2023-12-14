@@ -1,0 +1,39 @@
+// variables
+$primaryColor: #cea64d;
+$accentColor: #fcce6c;
+
+.listen {
+    background-color: $accentColor;
+    border-radius: 30px;
+    padding-top: 30px;
+}
+
+.listing-heading {
+    color: $primaryColor;
+}
+
+.listing-photo {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.listing-location {
+    padding: 10px 20px 20px 20px;
+}
+
+.listing-location::before {
+    content: url("/assets/location-pin.svg") / "";
+}
+
+section.listing a {
+    padding-left: 20px;
+    text-decoration: none;
+    color: $primaryColor;
+}
+
+section.listing a::after {
+    content: "\203A";
+    margin-left: 5px;
+}
