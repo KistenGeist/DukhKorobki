@@ -7,23 +7,15 @@ import { Housinglocation } from '../housinglocation';
   selector: 'app-home',
   standalone: true,
   imports: [CommonModule, HousingLocationComponent],
-  //templateUrl: './home.component.html',
-  template: `
-    <section>
-      <form>
-        <input type="text" placeholder="Filter by City"/>
-        <button class="primary" type="button">Search</button>
-      </form>
-    </section>
-    <section class="results">
-      <app-housing-location [housinglocation]="housinglocation"></app-housing-location>
-    </section>`,
+  templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
 
 export class HomeComponent {
+  // get image
   readonly baseUrl = 'https://angular.dev/assets/tutorials/common';
 
+  // create object of type Housinglocation 
   housinglocation: Housinglocation = {
     id: 9999,
     name: "Test Home",
@@ -34,4 +26,5 @@ export class HomeComponent {
     wifi: true,
     laundry: false
   };
+  // --> this will be exported into its binding in home.component.html
 }

@@ -11,5 +11,5 @@ import { Housinglocation } from '../housinglocation';
 })
 
 export class HousingLocationComponent {
-  @Input() housinglocation!: Housinglocation;
+  @Input() housingLocation!: Housinglocation; // was givin by home.component.ts via its html
 }

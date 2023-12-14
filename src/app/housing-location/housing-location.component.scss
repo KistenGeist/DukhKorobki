@@ -1,15 +1,16 @@
 // variables
-$primaryColor: #cea64d;
-$accentColor: #fcce6c;
+$primaryColor: #a58233;
+$accentColor: #cccaab;
 
-.listen {
+.listing {
     background-color: $accentColor;
     border-radius: 30px;
-    padding-top: 30px;
+    /*padding-top: 30px;*/
 }
 
 .listing-heading {
     color: $primaryColor;
+    padding-left: 20px;
 }
 
 .listing-photo {
