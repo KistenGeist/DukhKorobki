@@ -5,4 +5,5 @@
         <h2 class="listing-info-heading">{{housingLocation.name}}</h2>
         <p class="listing-info-location">{{housingLocation.city}}, {{housingLocation.state}}</p>
     </div>
+    <a [routerLink]="['/details', housingLocation.id]"></a>
 </section>
