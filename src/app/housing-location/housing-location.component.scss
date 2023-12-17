@@ -16,13 +16,13 @@ $accentColor: #cccaab;
 
 .listing > .listing-info {
     position: relative;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
     transform: translate(0,0)
 }
 
 .listing:hover > .listing-info {
     position: relative;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
     transform: translate(0,-80px)
 }
 
@@ -79,4 +79,9 @@ section.listing a {
 section.listing a::after {
     content: "\203A";
     margin-left: 5px;
+}
+
+a {
+    color: $primaryColor;
+    text-decoration: none; /* no underline */
 }

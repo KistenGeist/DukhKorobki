@@ -1,11 +1,12 @@
 // variables
 $primaryColor: #a58233;
 $accentColor: #cccaab;
+$headerheight: 50px;
 
 .headerContainer{
     display: flex;
-    height: 70px;
-    align-items: center;
+    height: $headerheight;
+    align-items: flex-end;
     margin-bottom: 10px;
 }
 
@@ -16,4 +17,9 @@ $accentColor: #cccaab;
 
 .headerTitle {
     font-size: 35px;
+}
+
+a {
+    color:$primaryColor;
+    text-decoration: none; /* no underline */
 }
