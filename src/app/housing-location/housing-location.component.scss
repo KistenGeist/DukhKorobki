@@ -34,6 +34,10 @@ $accentColor: #cccaab;
     z-index: 100;
 }
 
+.listing-photo:hover {
+    cursor: pointer;
+}
+
 .listing-info{
     height: 80px;
     background-color: #cccaab;
@@ -43,6 +47,10 @@ $accentColor: #cccaab;
     color: $primaryColor;
     padding: 10px 0px 0px 20px;
     margin: 0px;
+}
+
+.listing-info-heading:hover {
+    cursor: pointer;
 }
 
 .listing-info-details {
