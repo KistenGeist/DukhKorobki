@@ -4,29 +4,55 @@ $accentColor: #cccaab;
 
 .listing {
     background-color: $accentColor;
-    border-radius: 30px;
-    /*padding-top: 30px;*/
+    border-radius: 32px;
+    border: solid 2px white;
+    height: 300px;
+    overflow: hidden;
 }
 
-.listing-heading {
-    color: $primaryColor;
-    padding-left: 20px;
+.listing:hover {
+    border: solid 2px $primaryColor;
+}
+
+.listing > .listing-info {
+    position: relative;
+    transition: all 1s ease;
+    transform: translate(0,0)
+}
+
+.listing:hover > .listing-info {
+    position: relative;
+    transition: all 1s ease;
+    transform: translate(0,-80px)
 }
 
 .listing-photo {
-    height: 250px;
+    height: 300px;
     width: 100%;
     object-fit: cover;
-    border-radius: 30px 30px 0px 0px;
+    border-radius: 30px;
+    z-index: 100;
 }
 
-.listing-location {
-    padding: 10px 20px 20px 20px;
-    margin-bottom: 0px;
+.listing-info{
+    height: 80px;
+    background-color: #cccaab;
 }
 
-.listing-location::before {
+.listing-info-heading {
+    color: $primaryColor;
+    padding: 10px 0px 0px 20px;
+    margin: 0px;
+}
+
+.listing-info-location {
+    padding: 10px 20px 10px 20px;
+    margin: 0px;
+}
+
+.listing-info-location::before {
     content: url("/assets/location-pin.svg") / "";
+    padding-right: 5px;;
 }
 
 section.listing a {
