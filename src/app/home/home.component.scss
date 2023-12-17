@@ -29,6 +29,10 @@ button {
     border-radius: 8px;
 }
 
+.filter {
+
+}
+
 @media (min-width: 500px) and (max-width: 768px) {
     .result {
         grid-template-columns: repeat(2, 1fr);

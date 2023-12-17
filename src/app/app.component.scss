@@ -1,3 +1,19 @@
 // variables
 $primaryColor: #a58233;
 $accentColor: #cccaab;
+
+.headerContainer{
+    display: flex;
+    height: 70px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.headerLogo {
+    height: 100%;
+    object-fit: cover;
+}
+
+.headerTitle {
+    font-size: 35px;
+}
