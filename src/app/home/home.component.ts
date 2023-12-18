@@ -20,8 +20,11 @@ export class HomeComponent {
 
   // constructor function
   constructor() {
-    this.housingLocationList = this.housingService.getAllHousingLocations();
-    this.filteredLocationList = this.housingLocationList;
+    // get list asyncron
+    this.housingService.getAllHousingLocations().then( (result: Housinglocation[]) => {
+      this.housingLocationList = result;
+      this.filteredLocationList = result;
+    });
   }
 
   filterResults(text: string){

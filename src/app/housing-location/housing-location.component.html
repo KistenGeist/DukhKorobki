@@ -1,6 +1,8 @@
 <section class="listing">
     <!-- use data from object in export of houding.component.ts -->
-    <img class="listing-photo" [src]="housingLocation.photo" alt="Exterior photo of {{ housingLocation.name }}" crossorigin [routerLink]="['/details', housingLocation.id]"/>
+    <div class="imgContainer">
+        <img class="listing-photo" [src]="housingLocation.photo" alt="Exterior photo of {{ housingLocation.name }}" crossorigin [routerLink]="['/details', housingLocation.id]"/>
+    </div>
     <div class="listing-info">
         <h2 class="listing-info-heading" [routerLink]="['/details', housingLocation.id]">{{housingLocation.name}}</h2>
         <div class="listing-info-details">
