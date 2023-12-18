@@ -63,7 +63,7 @@ $accentColor: #cccaab;
   }
 
   label {
-    color: $accentColor;
+    color: $primaryColor;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 12pt;
@@ -79,6 +79,23 @@ $accentColor: #cccaab;
     border-left: none;
     border-bottom: solid .3px;
   }
+
+  .primary {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    //border: solid 1px $primaryColor;
+    border: none;
+    background-color: $accentColor;
+    color: $primaryColor;
+    border-radius: 8px;
+    font-weight: 300;
+    font-weight: bold;
+}
+
+.primary:hover {
+    background-color: $primaryColor;
+    color: white;
+}
 
   @media (max-width: 1024px) {
     .listing-photo {
