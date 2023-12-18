@@ -1,11 +1,11 @@
 <section class="filter">
     <form>
-        <input type="text" placeholder="Filter by City"/>
-        <button class="filterButton" type="button">Search</button>
+        <input type="text" placeholder="Filter by City" #filter (keyup)="filterResults(filter.value)"/>
+        <button class="filterButton" type="button" (click)="filterResults(filter.value)">Search</button>
     </form>
 </section>
 <section class="results">
     <!-- housinglocation was exported from home.component.ts and is givin to housing.component.ts (housingLocation !here big L)--> 
-    <app-housing-location *ngFor="let homeHousingLocation of housingLocationList" [housingLocation]="homeHousingLocation">
+    <app-housing-location *ngFor="let homeHousingLocation of filteredLocationList" [housingLocation]="homeHousingLocation">
     </app-housing-location> 
-</section>`,
+</section>
