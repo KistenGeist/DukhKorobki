@@ -113,6 +113,8 @@ export class HousingService {
     }
   ];
 
+  url = 'http://localhost:3000/locations';
+
   // function to return full list of housingLocations
   getAllHousingLocations(): Housinglocation[] {
     return this.housingLocationList;
