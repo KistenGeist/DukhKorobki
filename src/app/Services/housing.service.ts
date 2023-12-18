@@ -22,7 +22,7 @@ export class HousingService {
   }
 
   submitApllication(firstName: string, lastname: string, email: string){
-    console.log("Homes application received: firstname: ${firstName}, lastname: ${lastname}, email: ${email}");
+    console.log(`Homes application received: firstname: ${firstName}, lastname: ${lastname}, email: ${email}`);
   }
 
   constructor() { }
